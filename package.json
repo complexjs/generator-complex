@@ -1,8 +1,7 @@
 {
   "name": "generator-complex",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "generator for complex-engine project",
-  "homepage": "",
   "author": {
     "name": "faebeee",
     "email": "faebeee@gmail.com",
