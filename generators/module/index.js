@@ -7,7 +7,7 @@ module.exports = yeoman.Base.extend({
   prompting: function () {
     // Have Yeoman greet the user.
     this.log(yosay(
-      'Create new complexjs module'
+      'Create new '+chalk.bgBlue('complexjs')+' module'
     ));
 
     var prompts = [
@@ -20,7 +20,7 @@ module.exports = yeoman.Base.extend({
             type: 'input',
             name: 'modulepath',
             message: 'Where to store your modules',
-            default: this.config.get('modules_path') || "./src/modules"
+            default: this.config.get('modules_path') || "./modules"
         },
         {
             type:'list',

@@ -7,7 +7,7 @@ module.exports = yeoman.Base.extend({
     prompting: function () {
         // Have Yeoman greet the user.
         this.log(yosay(
-            'Create new complexjs module'
+            'Create new '+chalk.bgBlue('complexjs')+' system'
         ));
 
         var prompts = [
@@ -18,9 +18,9 @@ module.exports = yeoman.Base.extend({
             },
             {
                 type: 'input',
-                name: 'sourcepath',
+                name: 'systempath',
                 message: 'Where to store your modules',
-                default: this.config.get('sourcepath') || "./src"
+                default: this.config.get('systempath') || "./src/System"
             },
             {
                 type:'list',
@@ -31,7 +31,7 @@ module.exports = yeoman.Base.extend({
         ];
 
         return this.prompt(prompts).then(function (props) {
-            this.config.set('sourcepath', props.sourcepath);
+            this.config.set('systempath', props.systempath);
             this.props = props;
         }.bind(this));
     },
@@ -47,7 +47,7 @@ module.exports = yeoman.Base.extend({
 
         this.fs.copyTpl(
             this.templatePath(template),
-            this.destinationPath(this.props.sourcepath+"/System/"+this.props.name+'.js'),
+            this.destinationPath(this.props.systempath+"/"+this.props.name+'.js'),
             {
                 name : this.props.name
             }
