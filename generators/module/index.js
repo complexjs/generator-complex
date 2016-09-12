@@ -48,7 +48,7 @@ module.exports = yeoman.Base.extend({
 
         this.fs.copyTpl(
             this.templatePath(template),
-            this.destinationPath(this.props.modulepath+"/System/"+this.props.name+'.js'),
+            this.destinationPath(this.props.modulepath+"/"+this.props.name+"/System/"+this.props.name+'.js'),
             {
                 name : this.props.name
             }
@@ -56,7 +56,7 @@ module.exports = yeoman.Base.extend({
 
         this.fs.copyTpl(
             this.templatePath("Component.js"),
-            this.destinationPath(this.props.modulepath+"/Component/"+this.props.name+'.js'),
+            this.destinationPath(this.props.modulepath+"/"+this.props.name+"/Component/"+this.props.name+'.js'),
             {
                 name : this.props.name
             }
