@@ -13,7 +13,7 @@ module.exports = yeoman.Base.extend({
     var prompts = [
         {
             type: 'input',
-            name: 'Name',
+            name: 'name',
             message: 'Name'
         },
         {
