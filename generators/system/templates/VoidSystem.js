@@ -1,6 +1,6 @@
 'use strict';
 
-var cxVoidSystem = require('complex-engine').cxVoidSystem;
+let cxVoidSystem = require('complex-engine').cxVoidSystem;
 
 class <%= name %>System extends cxVoidSystem
 {

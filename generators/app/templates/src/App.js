@@ -1,9 +1,10 @@
 'use strict';
 
-var Complex = require('complex-engine');
-var MainScene = require('./Scene/MainScene');
+let Complex = require('complex-engine').Complex;
+let MainScene = require('./Scene/MainScene');
 
 let cx = new Complex();
+
 window.onload = function() {
     let scene = new MainScene();
     cx.loadScene(scene);

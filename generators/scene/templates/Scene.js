@@ -1,7 +1,7 @@
 'use strict';
 
-var cxScene = require('complex-engine').cxScene;
-var cxEntity = require('complex-engine').cxEntity;
+let cxScene = require('complex-engine').cxScene;
+let cxEntity = require('complex-engine').cxEntity;
 
 class MainScene extends cxScene {
     constructor() {

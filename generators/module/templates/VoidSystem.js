@@ -1,8 +1,8 @@
 'use strict';
 
-var cxVoidSystem = require('complex-engine').cxVoidSystem;
+let cxVoidSystem = require('complex-engine').cxVoidSystem;
 
-class <%= name %>System extends cxVoidSystem
+module.exports = class <%= name %>System extends cxVoidSystem
 {
     constructor( container, width, height )
     {
@@ -34,5 +34,3 @@ class <%= name %>System extends cxVoidSystem
 
     }
 }
-
-module.exports = <%= name %>System;

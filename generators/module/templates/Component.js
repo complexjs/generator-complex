@@ -7,10 +7,7 @@ let cxComponent = require('complex-engine').cxComponent
  */
 module.exports =  class <%= name %>Component extends cxComponent
 {
-    /**
-     * @param  {cxScript} script [description]
-     */
-    constructor ( script )
+    constructor ( )
     {
         super()
         this.tag = 'component.<%= name %>';
