@@ -9,7 +9,7 @@
   "dependencies": {
     "babelify": "^7.3.0",
     "browserify": "^13.0.1",
-    "complex-engine": "^2.0.2",
+    "complex-engine": "^4.0.2",
     "vinyl-source-stream": "^1.1.0"
   }
 }

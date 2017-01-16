@@ -9,6 +9,6 @@ module.exports = class MainScene extends cxScene {
     }
 
     load() {
-        this.world.initSystems();
+        this.world.init();
     }
 }
