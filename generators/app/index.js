@@ -24,9 +24,12 @@ module.exports = yeoman.Base.extend({
   },
 
   writing: function () {
-    this.fs.copy(
+    this.fs.copyTpl(
       this.templatePath('package.json'),
-      this.destinationPath(this.props.name+'/package.json')
+      this.destinationPath(this.props.name+'/package.json'),
+      {
+        name : this.props.name
+      }
     );
 
     this.fs.copy(

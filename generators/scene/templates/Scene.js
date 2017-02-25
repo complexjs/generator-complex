@@ -3,9 +3,9 @@
 let cxScene = require('complex-engine').cxScene;
 let cxEntity = require('complex-engine').cxEntity;
 
-class MainScene extends cxScene {
+class <%= name %> extends cxScene {
     constructor() {
-        super("MainScene");
+        super("<%= name %>");
     }
 
     load() {

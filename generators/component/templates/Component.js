@@ -1,6 +1,6 @@
 'use strict';
 
-let cxComponent = require('complex-engine').cxComponent
+let cxComponent = require('complex-engine').cxComponent;
 
 /**
  *
